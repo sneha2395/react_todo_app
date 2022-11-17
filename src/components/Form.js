@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './Button';
 import Listitem from './ListItem';
+// import { FaTrashAlt } from "react-icons/fa";
 
 
 
@@ -8,6 +9,11 @@ let data = [
   {
     taskName: 'Example task',
     date: '22-10-2022',
+    completed: false
+  },
+  {
+    taskName: 'task1',
+    date: "22-10-2022",
     completed: false
   },
   {
@@ -43,9 +49,11 @@ const Form = () => {
 
       <hr />
       <div className='form-page'>
+
+        {data.map((data) => (
         <Listitem data={data} />
-        <button className='btn'>
-        <i class="fa fa-trash-o"></i></button></div>
+        ))};
+       </div>
     </div>
   );
 };

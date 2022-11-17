@@ -54,7 +54,7 @@
 .form-page{
     margin: 1rem;
     padding: 1rem;
-    width:23rem;
+    width:auto;
     height: 2.5rem;
     background: #ffffff;
     color: black;
@@ -68,4 +68,9 @@
     align-items: center;
     justify-content: center;
 } */
+.itemList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
