@@ -51,6 +51,7 @@ const Form = () => {
       <div className='form-page'>
 
         {data.map((data) => (
+          console.log(data),
         <Listitem data={data} />
         ))};
        </div>
