@@ -4,13 +4,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #355E3B;
+    background-color: #35425e;
     color: white;
 }
 .wrapper{
     width: 50vh;
     height: 65vh;
-    background: #2E8B57;
+    background: #2e698b;
     /* border: 1px solid red; */
     border-radius: 0.5rem;
    
@@ -18,7 +18,7 @@
 .btn-add {
     width: 5rem;
     height: 4rem;
-    background: #4F7942;
+    background: #35425e;
     color: white;
     border: none;
     border-radius: 1rem;
@@ -59,7 +59,7 @@
     background: #ffffff;
     color: black;
     border-radius: 0.5rem;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: space-between;
 }
@@ -73,4 +73,24 @@
     justify-content: space-between;
     align-items: center;
 }
+.delete-btn{
+    color: #355E3B;
+    background-color: #00A36C;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5em;
+}
+.delete-btn {
+    color: #2c44bf;;
+    background-color: #35b3d973;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5em;
+}
+.listItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 

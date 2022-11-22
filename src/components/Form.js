@@ -1,11 +1,10 @@
 import React from 'react';
 import Button from './Button';
 import Listitem from './ListItem';
-// import { FaTrashAlt } from "react-icons/fa";
 
 
 
-let data = [
+let taskList = [
   {
     taskName: 'Example task',
     date: '22-10-2022',
@@ -25,7 +24,6 @@ let data = [
 
 
 const Form = () => {
-  // const [value, setValue] = React.useState("");
 
   // const handleSubmit = e => {
   //   e.preventDefault();
@@ -36,25 +34,20 @@ const Form = () => {
 
   return (
     <div className='formSection'>
-
       <div className='formInnerSection'>
         <input
           type="Search"
           className='input-box'
           placeholder='Enter a todo'
         />
-        <Button />
-
+        <Button/>
       </div>
-
       <hr />
       <div className='form-page'>
-
-        {data.map((data) => (
-          console.log(data),
-        <Listitem data={data} />
-        ))};
-       </div>
+        {taskList.map((task) => (
+          <Listitem data={task}/>
+        ))}
+      </div>
     </div>
   );
 };

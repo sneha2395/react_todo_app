@@ -3,7 +3,8 @@ import React from 'react'
 const Item = (props) => {
     console.log(props);
   return (
-    <div> Hello {props.name} studies {props.subject}</div>
+    <div>TEST</div>
+    // <div> Hello {props.name} studies {props.subject}</div>
      
   );
 };
