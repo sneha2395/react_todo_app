@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './Button';
 import Listitem from './ListItem';
+import {useState} from 'react';
 
 
 
@@ -24,7 +25,7 @@ let taskList = [
 
 
 const Form = () => {
-
+  // const [active, setActive] = useState(types[0]);
   // const handleSubmit = e => {
   //   e.preventDefault();
   //   if (!value) return;
@@ -41,6 +42,8 @@ const Form = () => {
           placeholder='Enter a todo'
         />
         <Button/>
+       
+      
       </div>
       <hr />
       <div className='form-page'>

@@ -1,28 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
 .App{
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #35425e;
+    background: url("./images/background1.jpg");
     color: white;
+    object-fit: cover;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0.7;
 }
 .wrapper{
-    width: 50vh;
-    height: 65vh;
+    width: 60vh;
+    height: 80vh;
     background: #2e698b;
     /* border: 1px solid red; */
     border-radius: 0.5rem;
-   
+    background: url("./images/background1.jpg");
+    /* opacity: 0; */
 }
 .btn-add {
-    width: 5rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 2.9rem;
     background: #35425e;
     color: white;
     border: none;
-    border-radius: 1rem;
-    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    
 }
 .btn-add:hover{
     background: #00A36C;
@@ -43,7 +55,7 @@
 .input-box{
     border: none;
     border-radius: 0.5rem;
-    width: 17rem ;
+    width: 25rem ;
     height: 3rem;
     font-size: 1.2rem;
     padding: 10px;}
@@ -55,19 +67,14 @@
     margin: 1rem;
     padding: 1rem;
     width:auto;
-    height: 2.5rem;
+    height: auto;
     background: #ffffff;
     color: black;
     border-radius: 0.5rem;
-    /* display: flex; */
     align-items: center;
     justify-content: space-between;
 }
-/* .form-page{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+
 .itemList{
     display: flex;
     justify-content: space-between;
@@ -87,10 +94,18 @@
     border: none;
     border-radius: 0.5em;
 }
-.listItem{
+.listItem {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: wheat;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 0.rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
 }
 
 

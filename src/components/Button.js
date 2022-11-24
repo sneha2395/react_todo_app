@@ -1,14 +1,15 @@
-import React from 'react';
+import React, {useState}from 'react';
 
-function sayHello() {
-  alert('Hello!');
+function adding() {
+  // alert('Hello!');
 }    
 
 
 const Button = () => {
+  const [btnState, setBtnState] = useState(false);
   return (
     <div>
-        <button type='Submit' className='btn btn-add' onClick={sayHello}
+        <button type='Submit' className='btn btn-add' onClick={adding()}
         
         >Add
         {/* <i className='fa-d'></i> */}
