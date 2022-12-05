@@ -1,15 +1,15 @@
 import React, {useState}from 'react';
 
-function adding() {
-  // alert('Hello!');
-}    
+// function adding() {
+//   // alert('Hello!');
+// }    
 
 
 const Button = () => {
   const [btnState, setBtnState] = useState(false);
   return (
     <div>
-        <button type='Submit' className='btn btn-add' onClick={adding()}
+        <button type='submit' className='btn btn-add'
         
         >Add
         {/* <i className='fa-d'></i> */}
@@ -20,3 +20,4 @@ const Button = () => {
 }
 
 export default Button;
+{/* <Button type="submit" onClick={() => setTodo(todo + 1)} /> */}

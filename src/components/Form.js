@@ -1,56 +1,55 @@
 import React from 'react';
 import Button from './Button';
 import Listitem from './ListItem';
-import {useState} from 'react';
-
-
-
-let taskList = [
-  {
-    taskName: 'Example task',
-    date: '22-10-2022',
-    completed: false
-  },
-  {
-    taskName: 'task1',
-    date: "22-10-2022",
-    completed: false
-  },
-  {
-    taskName: 'task1',
-    date: "22-10-2022",
-    completed: false
-  }
-]
+import { useState } from 'react';
 
 
 const Form = () => {
-  // const [active, setActive] = useState(types[0]);
-  // const handleSubmit = e => {
-  //   e.preventDefault();
-  //   if (!value) return;
-  //   addTodo(value);
-  //   setValue("");
-  // };
+ 
+  // const [todo, setTodo] = useState("");
+  // const [todos, setTodos] = useState([]);
 
-  return (
+const inputTexthandler = (e) => {
+console.log(e.target.value);
+};
+ 
+
+  // const handleSubmit = (e) => {
+  //   console.log();
+  //   e.preventDefault();
+
+  //   if (todo !== '') {
+  //     setTodos([{id:`${todo}-${Date.now()}`, todo }, ...todos]);
+
+  //   }
+  // };
+return (
     <div className='formSection'>
-      <div className='formInnerSection'>
+      <form className='formInnerSection'>
         <input
           type="Search"
           className='input-box'
           placeholder='Enter a todo'
+          // onChange={(e) => setTodo(e.target.value)}
+          onChange={inputTexthandler}
         />
-        <Button/>
-       
-      
-      </div>
+        <Button />
+
+        </form>
       <hr />
-      <div className='form-page'>
-        {taskList.map((task) => (
+     
+        {/* <ul className='allTodos'>
+          {todos.map((t) => (
+            <li className='singleTodo'>
+              <span className='todoText'>{t.todo}</span>
+              <Listitem />
+            </li>
+          ))}
+        </ul> */}
+
+        {/* {taskList.map((task) => (
           <Listitem data={task}/>
-        ))}
-      </div>
+        ))} */}
     </div>
   );
 };
