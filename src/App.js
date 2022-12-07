@@ -13,14 +13,11 @@ const [todos, setTodos]= useState([]);
   return (
     <div className="App">
       <div className='wrapper'>
-        <Header/>
-        <h1>todo{inputText}</h1>
-        {/* <Form/>  */}
-        {/* <TodoList todos={todos} setTodos={setTodos}
+        * <Header/>
+      {/* *<h1>todo</h1> */}
         
-        /> */}
         <Item inputText={inputText} todos={todos}setTodos={setTodos}setInputText={setInputText}/>
-        <TodoList todos={todos}/>
+        <TodoList todos={todos} setTodos={setTodos}/> 
       </div>
       {/* <Item name="Sneha" subject="Physics" />
       <Item name="neha" subject="Chemistery" />

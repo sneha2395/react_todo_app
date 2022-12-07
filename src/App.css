@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("./images/background1.jpg");
+    background: url("./images/background.jpg");
     color: white;
     object-fit: cover;
     width: auto;
@@ -15,25 +15,27 @@
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Quicksand', sans-serif;
-    opacity: 0.7;
+
 }
 .wrapper{
     width: 60vh;
     height: 80vh;
-    background: #2e698b;
+    /* background: #2e698b; */
     /* border: 1px solid red; */
     border-radius: 0.5rem;
-    background: url("./images/background1.jpg");
+    /* background: url("./images/background1.jpg"); */
     /* opacity: 0; */
 }
 .btn-add {
-    width: 3.5rem;
-    height: 2.9rem;
-    background: #35425e;
-    color: white;
+    padding: 10px;
+    border-radius: 30%;
+    color: black;
+    font-size: 1.2rem;
+    background-color: yellow;
     border: none;
-    border-radius: 0.5rem;
-    font-size: 1.1rem;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 3px solid black;
     
 }
 .btn-add:hover{
@@ -46,23 +48,43 @@
     align-items: center;
      
 }
-.header h1{
-    color: wheat;
-    display: flex;
+.header{
     align-items: center;
-    justify-content: center;
+    width: auto;
+}
+.header h1{
+    font-size: 3.3rem;
+    padding: 0px 20px 0px 20px;
+    background-color: rgb(242, 255, 123);
+    border-radius: 10px;
+    border: 2px solid black;
+    align-self: center;
+    color: #1b1b1b;
+    font-family: "Covered By Your Grace", cursive;
 }
 .input-box{
-    border: none;
-    border-radius: 0.5rem;
-    width: 25rem ;
-    height: 3rem;
-    font-size: 1.2rem;
-    padding: 10px;}
+    background: transparent;
+  border: none;
+  color: black;
+  border-bottom: 5px dashed black;
+  min-width: 400px;
+ 
+  padding: 5px;
+  font-size: 1rem;
+}
+    
+.formInnerSection input:focus {
+        outline: none;
+        border: 2px dotted black;
+      }     
 .hr{
     background-color: #00A36C;
 
 }
+.formInnerSection input::placeholder {
+    color: black;
+    font-size: 1.3rem;
+  }
 .allTodos{
     margin: 1rem;
     padding: 1rem;
@@ -80,25 +102,27 @@
     justify-content: space-between;
     align-items: center;
 }
-.delete-btn{
+.trash-button{
     color: #355E3B;
     background-color: #00A36C;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border: none;
     border-radius: 0.5em;
 }
-.delete-btn {
+.trash-button {
     color: #2c44bf;;
     background-color: #35b3d973;
     font-size: 1rem;
     border: none;
     border-radius: 0.5em;
+    margin-left: 5px;
+    font-size: 20px;
 }
 .todo_container {
 
     align-items: center;
     justify-content: space-between;
-    background: wheat;
+    /* background: wheat; */
     margin: 10px;
     width: auto;
     height: auto;
@@ -109,10 +133,25 @@
 }
 
 .todo{
-    background-color: #00A36C;
-    text-decoration: none;
+    list-style: none;
+    margin-bottom: 4px;
+  font-weight: 300;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-left: -100px;
+    background-color: rgb(236, 236, 236, 0.6);
+    font-family: "Permanent Marker", cursive;
+    color: black;
     display: flex;
-    align-items: center;
+    justify-content: inherit;
+    padding: 10px;
+}
+.completed {
+    opacity: 0.5px;
+    text-decoration:  line-through;
 }
 
 

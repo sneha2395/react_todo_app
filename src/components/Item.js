@@ -21,7 +21,7 @@ const submitTodohandler =(e)=> {
       <input
         type="Search"
         className='input-box'
-        placeholder='Enter a todo'
+        placeholder='Add task here...'
         // onChange={(e) => setTodo(e.target.value)}
         onChange={inputTexthandler}
         value={inputText}
