@@ -25,7 +25,7 @@ const Todo = ({ text, todo, todos, setTodos }) => {
 
     <div className='todo'>
       {/* <div className='todo-itemList'></div> */}
-      <li className='todo-item'><b>{moment().format('MMMM Do YYYY, h:mm:ss a')}</b>{text} </li>
+      <li className={`todo-item ${todo.completed ?"completed":"" }`}><b>{moment().format('MMMM Do YYYY, h:mm:ss a')}</b>{text} </li>
       <div className='button-group'>
         <button onClick={completeHandler} className='trash-button'>
           <i className='fas fa-check'></i>
