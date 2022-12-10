@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
-
-.App{
-    min-height: 100vh;
+/* .App{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+} */
+/* *{
+    display: flex;
+    align-items: center;
+} */
+.App{
+    min-height: 100vh;
+   
     background: url("./images/background.jpg");
     color: white;
     object-fit: cover;
@@ -15,7 +22,31 @@
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Quicksand', sans-serif;
+    /* position: ; */
+}
+.navbar{
+    width: auto;
+    height: 4rem;
+    background-color: transparent;
+    box-shadow:0px 1px 3px 4px #c24503;
+    border-radius: 5px;
+}
+.change-theme{
+    padding: 20px;
+    margin: 10px;
+    /* display: flex-end; */
+    color: #1b1b1b;
+    font-size: 1.3rem;
+    font-weight: 500;
+    /* font-family: "Covered By Your Grace", cursive; */
+    display: flex;
+    flex-flow: row-reverse;
 
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .wrapper{
     width: 60vh;
@@ -135,7 +166,7 @@
 .todo{
     list-style: none;
     margin-bottom: 4px;
-  font-weight: 300;
+    font-weight: 300;
     border: 2px solid black;
     border-radius: 10px;
     padding-bottom: 5px;
@@ -153,6 +184,42 @@
     opacity: 0.5;
     text-decoration:  line-through;
 };
+
+/*CUSTOM SELECTOR */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+  }
+  
+  /* Custom Select */
+  .select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  select {
+    color: #ff6f47;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+  }
+  /* Arrow */
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: #ff6f47;
+    cursor: pointer;
+    pointer-events: none;
+  }
 
 
 
