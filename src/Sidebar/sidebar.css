@@ -1,0 +1,86 @@
+.sidebarTop{
+display: flex;
+align-items: center;
+justify-content: start;
+height: 80px;
+background-color:darkcyan;
+}
+.menu-bars{
+    margin-left: 2rem;
+    background: none;
+    font-size: 2rem;
+
+}
+.nav-menu{
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color:darkcyan;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 550ms;
+   
+}
+.nav-menu.active{
+ 
+  left: 0;
+  transition: 350mss;
+}
+.nav-text {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    list-style: none;
+    height: 80px;
+    padding: 8px 0 8px 16px;
+    list-style: none;
+   
+}
+.nav-text:hover{
+    background-color: aliceblue;
+    color: darkcyan;
+}
+.nav-text a{
+    text-decoration:  none;
+    color: aqua;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 4px;
+}
+.nav-text a :hover{
+        background-color: blue;
+        color: darkcyan;
+        padding: 10px;
+        border-radius: 5px;
+}
+ .nav-menu-item{
+    width: 100%;
+
+ }
+ .navbar-toggle{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 90%;
+    height: 80px;
+    background-color: darkcyan;
+   font-size: 2rem;
+   margin-left: 1rem;
+ }
+ span{
+margin-left: 16px;
+ }
+ .home,.change-theme,.todays-list{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    height: 80vh;
+    font-size: 3rems;
+    font-family: 'Courier New', Courier, monospace;
+ }
