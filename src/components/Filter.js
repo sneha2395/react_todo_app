@@ -15,6 +15,8 @@ var arr = [
     { text: 'ggggg', completed: false, id: 49.8930117741847 },
     { text: 'ttttttttttttttttttt', completed: false, id: 384.2 },
 ];
+// console.log(arr.slice(2));
+
 const filteredArray = [];
 
 for (let i = 0; i < arr.length; i++) {
@@ -25,3 +27,18 @@ for (let i = 0; i < arr.length; i++) {
         filteredArray.push(arr[i])
     }
 }
+////------------array.filter()---------////
+
+
+
+//////////--------------array.slice()
+////here i learned that 
+ const sliceArr = arr.slice(2);
+//console.log(sliceArr);
+
+///////////------Splice--------///////
+const spliceArr = arr.splice(1, 0, 'erererer');
+console.log(spliceArr);
+
+////------------ArrayFind
+
